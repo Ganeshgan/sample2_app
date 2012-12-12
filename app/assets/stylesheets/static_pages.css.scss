@@ -6,6 +6,11 @@
 
 /* universal */
 $grayMediumLight: #eaeaea;
+@mixin box_sizing {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+}
 
 
 html {
@@ -100,6 +105,26 @@ footer {
     }
   }
 }
+input{
+  width: 100%;
+}
+
+/*flash */
+
+#flash_error,
+#flash_alert,
+#flash_notice {
+  color: #f00;
+  margin: 0 0 18px 0;
+}
+
+#error_explanation {
+  color: #f00;
+  ul {
+    margin: 0 0 18px 0;
+  }
+}
+
 
 
 
