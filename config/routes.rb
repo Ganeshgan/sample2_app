@@ -1,5 +1,6 @@
 SampleApp::Application.routes.draw do
   
+
   devise_for :users do
     match "login" => "devise/sessions#new"
     match "logout" => "devise/sessions#destroy"
@@ -12,7 +13,7 @@ SampleApp::Application.routes.draw do
   match '/about',   to: 'static_pages#about'
   match '/contact', to: 'static_pages#contact'
 
-   
+  match '/users', to: 'users#show'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
